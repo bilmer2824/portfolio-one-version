@@ -1,0 +1,28 @@
+.timer{
+    position: fixed;
+    right: 3%;
+    bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border:3px solid orange;
+    padding: 10px 20px;
+    border-radius: 15px;
+    width: 122px;
+    height: 50px;
+    
+    @include media(820){
+        display:none;
+    }
+    @include media(600){
+        display:none;
+    }
+    
+    &_hours{
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $mont;
+        color: orange;
+        letter-spacing: 2px;
+    }
+}

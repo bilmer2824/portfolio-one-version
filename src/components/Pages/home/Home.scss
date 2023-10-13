@@ -1,0 +1,260 @@
+.home{
+    width: 100%;
+    height: 87vh;
+    position: relative;
+    
+    
+    @include media(600) {
+        height: 50vh;
+    }
+    &_logo{
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        z-index: -10;
+        opacity: 0.5;
+    }
+    & .container{
+        position:relative;
+    }
+    &_top{
+        padding: 30px;
+        height: 700px;
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 20px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        position: relative;
+        
+        @include media(600) {
+            height: 500px;
+        }
+    }
+    &_text{
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color:#242D49;
+        letter-spacing: 2px;
+        @include media(600) {
+            font-size: 15px;
+        }
+        
+    }
+    &_title{
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 85px;
+        color:orange;
+        letter-spacing: 2px;
+        
+        @include media(600) {
+            font-size: 65px;
+            text-align: center;
+        }
+    }
+    &_bg_text{
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 24px;
+        color:#242D49;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        text-align: center;
+        
+        @include media(600) {
+            font-size: 15px;
+        }
+    }
+    &_btn-gpa{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding: 10px 5px;
+        margin-top: 20%;
+        
+        @include media(600) {
+            flex-direction: column;
+        }
+    }
+    &_hire_btn{
+        padding: 10px 15px;
+        border:none;
+        border-radius:5px;
+        margin-right: 15px;
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 20px;
+        color:#ffff;
+        background:orange;
+        box-shadow:0px 0px 5px #fff;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        width: 156px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        
+        
+        @include media(600) {
+            margin:0px 0px 15px 0px !important;
+            width: auto;
+        }
+    }
+    &_svg_btn{
+        padding: 10px 15px;
+        border:none;
+        border-radius:5px;
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 20px;
+        color:#ffff;
+        background:#242D49;
+        box-shadow:0px 0px 5px #fff;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        width: 156px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        
+        @include media(600) {
+            width: auto;
+        }
+    }
+    &_button_gpa{
+        border:1px solid #fff;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+        width: 580px;
+        
+    }
+    &_icons{
+        font-size: 55px;
+        color:orange;
+        margin: 10px 40px;
+        
+        @include media(600) {
+            font-size: 35px;
+            margin: 10px 20px;
+        }
+    }
+    &_icon_gr{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        
+        @include media(600) {
+            margin-top: 5%;
+        }
+    }
+    &_skills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &_img_gp{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &_img_logo_1{
+        position: absolute;
+        right: 0;
+        width:800px;
+        height: 520px;
+        transform: rotate(-15deg);
+    }
+    &_img_logo_2{
+        position: absolute;
+        right: 0;
+        width: 763px;
+        height: 504px;
+        transform: rotate(45deg);
+    }
+}
+.homeSkills{
+    position: relative;
+    width: 80%;
+    height: 200px;
+    border:1px solid #fff;
+    border-radius: 50px;
+    margin: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    background:#fff;
+    
+    &_icon_gpa{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    &_icon{
+        font-size: 35px;
+        color:#000;
+    }
+}
+.home_slider{
+    position: relative;
+    
+}
+.icon_bgb{
+    font-size: 250px;
+    color:red;
+}
+
+.divbar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 40px;
+    height: 0px;
+    border-radius: 50%;
+    z-index: -10;
+    // opacity: 0.5;
+    box-shadow: 0px 0px 180px 100px cyan;
+}
+.divbar_2{
+    position: fixed;
+    top: 20%;
+    margin: auto 0;
+    right: 0;
+    width: 0px;
+    // opacity: 0;
+    height: 40px;
+    border-radius: 50%;
+    z-index: -10;
+    box-shadow: 0px 0px 180px 100px rgb(225, 0, 255);
+}
+.divbar_3{
+    width: 0px;height: 40px;
+    box-shadow: 0px 0px 180px 100px orange;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    margin: auto 0;
+    // opacity: 0;
+}
+.none{
+    display: none !important;
+}

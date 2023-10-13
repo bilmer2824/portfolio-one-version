@@ -1,0 +1,317 @@
+.header {
+    backdrop-filter: blur(15px);
+    // -webkit-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    // -moz-box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    // box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+    // opacity: 0 !important;
+
+
+    @include media(930) {
+        // overflow: hidden;
+        height: 105px;
+
+        &.active {
+            height: 320px;
+        }
+    }
+    & .container{
+        position: relative;
+    }
+
+    @include media(600) {
+        height: 60px;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+
+        &.active {
+            height: 290px;
+        }
+    }
+
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        @include media(600) {
+            padding: 10px 20px;
+        }
+
+
+    }
+
+    &_home_link {
+        border: 5px double orange;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+
+        @include media(600) {
+            width: 40px;
+            height: 40px;
+        }
+
+    }
+
+    &_title {
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 28px;
+        color: orange;
+    }
+
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media (930) {
+            position: absolute;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            top: 105px;
+            opacity: 0;
+            transition: 0.4s;
+            z-index: +100;
+
+            transform: rotateX(90deg);
+
+            &.active {
+                opacity: 1;
+                transform:rotateX(0deg);
+            }
+        }
+
+        @include media(600) {
+            top: 60px;
+        }
+    }
+
+    &_item {
+        padding: 10px 25px;
+        margin: 0px 5px;
+
+        @include media(1100) {
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    &_link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        // color: #242D49;
+
+        &.active {
+            color:orange;
+            .header_span {
+                // opacity: 1;
+            }
+        }
+
+        @include media(600) {
+            width: 100%;
+        }
+    }
+
+    &_span {
+        width: 8px;
+        height: 8px;
+        background: orange;
+        border-radius: 50%;
+        margin-right: 10px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+    &-btn_gpa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 3px solid orange;
+        overflow: hidden;
+        // padding: 0px 10px;
+    }
+
+    &_button {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: none;
+        background: rgba(0, 0, 0, 0);
+        transition: 0.4s;
+        border: 3px solid orange;
+        color: #242D49;
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        height: 50px;
+
+        &.activate {
+            // color: orange;
+            border-color: #242D49;
+
+            .header_icon {
+                // color: orange;   
+                transform: rotate(90deg);
+            }
+
+        }
+        
+        & span{
+            
+        }
+
+        @include media(820) {
+            & span {
+                display: none;
+            }
+        }
+
+        @include media(600) {
+            height: 40px;
+            padding: 5px 10px;
+
+            & span {
+                display: none;
+            }
+        }
+    }
+    
+
+    &_menu_kk {
+        &.active {
+            .header_icon_menu {
+                // color: orange;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    &_button_№_2 {
+        border: 1px solid orange;
+        border-top: 0px;
+        border-bottom: 0px;
+        padding: 0 5px;
+        // margin: 0 5px;
+    }
+
+    &_icon {
+        color: #242D49;
+        font-size: 22px;
+        transition: 0.7s;
+        margin-right: 10px;
+        transform: rotate(0deg);
+
+        @include media (820) {
+            margin: 0;
+        }
+
+        @include media (600) {
+            margin: 0;
+        }
+    }
+
+    &_icon_menu {
+        color: #242D49;
+        font-size: 22px;
+        transition: 0.4s;
+        transform: rotate(0deg);
+    }
+
+    &_menu_kk {
+        display: none;
+
+        @include media(930) {
+            display: flex;
+        }
+    }
+
+    &_btn_gpa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+
+.icon_home_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-90deg);
+    position: fixed;
+    bottom: 10%;
+
+    background: orange;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: -5px 5px 10px 0px rgba(255, 255, 255, 0.35);
+    opacity: 0;
+    transition: 0.4s;
+    overflow: hidden;
+    right: 0%;
+    z-index: +10;
+
+    &.active {
+        opacity: 1;
+        z-index: +10;
+        right: 3%;
+    }
+    @include media(900) {
+        bottom: 10px !important;
+    }
+    @include media(820) {
+        bottom: 10px !important;
+    }
+
+    @include media(600) {
+        bottom: 10px !important;
+    }
+}
+
+.icon_home_bg {
+    color: #fff;
+    font-size: 25px;
+    animation: anime 2s linear infinite;
+}
+
+@keyframes anime {
+    0% {
+        transform: translate(-40px, 0px);
+    }
+
+    100% {
+        transform: translate(40px, 0px);
+    }
+}
+
+.ffff {
+    width: 100px;
+    height: 5000px;
+    background: red;
+}

@@ -1,0 +1,28 @@
+@import './components/Layout/var/Var.scss';
+@import './components/Layout/var/Swipper.setting.scss';
+@import './components/Layout/setting/Setting.scss';
+
+@import './components/Pages/about/About.scss';
+@import './components/Pages/education/Education.scss';
+@import './components/Pages/home/Home.scss';
+@import './components/Pages/portfolio/Portfolio';
+@import './components/Pages/error/error.scss';
+@import './components/Pages/contact/Contact.scss';
+
+@import './components/App/commentary/Commentary.scss';
+@import './components/App/profile/Profile.scss';
+
+@import './components/Web/header/Header.scss';
+@import './components/Web/footer/Footer.scss';
+@import './components/App/timer/Timer.scss';
+@import './components/App/context/Control.scss';
+@import './components/App/login/Login.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}

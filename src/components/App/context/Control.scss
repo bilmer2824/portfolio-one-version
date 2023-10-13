@@ -1,0 +1,62 @@
+.loader{
+    color:white ;
+    transition: 0.4s;
+    
+    &.active{
+        color:aqua;
+    }
+    // &.activate{
+    //     color:aqua;
+    // }
+}
+.loaderPlus{
+    color:#242D49 ;
+    transition: 0.4s;
+    
+    
+}
+
+
+.oranges{
+    color:orange;
+}
+.oranges-plus{
+    color:aqua;
+    
+}
+
+.border{
+    border-color:orange;
+}
+.border-plus{
+    border-color:aqua;
+}
+
+
+.swipperLoader{
+    background:orange;
+}
+.swipperLoaderPlus{
+    background:aqua;
+}
+
+.backgrounds{
+    background:#fff;
+}
+.backgrounds-plus{
+    background:#000;
+}
+
+
+.headerTrans{
+    transform: rotateX(90deg);
+    transition: 0.4s;
+    opacity: 0;
+    margin-top: -10px;
+}
+.headerTrans_plus{
+    transform: rotate(0deg);
+    transition: 0.4s;
+    opacity: 1;
+    margin-top: 0 ;
+}

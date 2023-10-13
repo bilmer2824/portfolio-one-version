@@ -1,0 +1,301 @@
+.education {
+    width: 100%;
+
+    &_spanes{
+        color:orange;
+    }
+    &_main_title {
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 45px;
+        text-transform: capitalize;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #242D49;
+        margin-top: 20px;
+        @include media(600){
+            font-size: 32px;
+        }
+    }
+
+    &_top {
+        padding: 30px;
+    }
+
+    &_tt {
+        width: 70px;
+
+        @include media(820) {
+            width: 50px;
+        }
+
+        @include media(600) {
+            width: auto;
+        }
+    }
+
+    &_skills {
+        padding: 30px;
+    }
+
+    &_lang {
+        padding: 30px;
+    }
+
+    &_certificate {
+        padding: 30px;
+    }
+    &_videos{
+        padding: 30px;
+    }
+
+    &_title_gpa {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+    &_img {
+        height: 50px;
+        width: 50px;
+        filter: hue-rotate(210deg);
+    }
+
+    &_title {
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 25px;
+        color: #242D49;
+        text-transform: capitalize;
+        margin-left: 10px;
+        letter-spacing: 2px;
+
+        @include media(820) {
+            font-size: 32px;
+        }
+
+        @include media(600) {
+            margin-left: 16px;
+        }
+
+
+    }
+
+    &_skills_icon {
+        font-size: 40px;
+        color: orange;
+        filter: drop-shadow(8px 8px 4px #242D49) opacity(0.8);
+    }
+
+    &_text {
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 16px;
+        color: #242D49;
+        letter-spacing: 2px;
+        padding: 10px 30px;
+        border: 1px solid orange;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        line-height: 22px;
+
+        @include media(820) {
+            line-height: 28px;
+            font-size: 24px;
+        }
+        @include media(600){
+            font-size: 13px;
+        }
+    }
+
+    &_skills_text_pp {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 230px;
+
+        @include media(1200) {
+            height: 300px;
+        }
+
+        @include media(820) {
+            height: auto;
+        }
+
+        @include media(600) {
+            height: auto;
+        }
+    }
+
+    &_front {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px;
+
+        @include media(820) {
+            width: 100%;
+        }
+
+        @include media(600) {
+            width: 100%;
+        }
+    }
+
+    &_skills_title {
+        font-family: $monta;
+        font-weight: 600;
+        font-size: 20px;
+        color: orange;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+
+        @include media(600) {
+            font-size: 16px;
+
+            & span {
+                font-size: 14px;
+                text-transform: lowercase;
+
+            }
+        }
+    }
+
+    &_basic_span {
+        font-weight: 400;
+        color: #242D49;
+        font-size: 18px;
+        text-transform: lowercase;
+    }
+
+    &_skills_text {
+        font-family: $monta;
+        font-weight: 500;
+        font-size: 16px;
+        color: #242D49;
+        margin-top: 10px;
+        letter-spacing: 1px;
+
+        @include media(600) {
+            font-size: 14px;
+        }
+    }
+
+    &_language {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 136px;
+
+        @include media(1400) {
+            height: 140px;
+        }
+
+        @include media(820) {
+            height: auto;
+        }
+
+        @include media(600) {
+            height: auto;
+        }
+    }
+
+    &_range {
+        width: 300px;
+        height: 10px;
+        border-radius: 5px;
+        background: #ededed;
+        margin-top: 15px;
+        overflow: hidden;
+
+        @include media(820) {
+            width: 100%;
+        }
+
+        @include media(600) {
+            width: 100%;
+        }
+    }
+
+    &_range_bacic {
+        height: 100%;
+        background: orange;
+        border-radius: 5px;
+    }
+
+    &_certificate_logo {
+        width: 500px;
+        height: 250px;
+        border-radius: 25px;
+        margin-left: 10px;
+        margin-top: 15px;
+        border: 3px solid orange;
+
+        @include media(600) {
+            width: 300px;
+            height: 150px;
+        }
+    }
+
+    &_logo_pages_bg {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        @include media(820) {
+            justify-content: center;
+        }
+    }
+    &_youTube{
+        width:100%;
+        height:100%;
+    }
+    &_div_zba{
+        width: 100%;
+        height: 100%;
+        border:2px solid orange;
+        border-radius:5px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+.ratio{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+    
+    & iframe{
+        border: none !important;
+        // border-radius:10px;
+    }
+    
+    @include media(600){
+        height: 150px;
+    }
+}
+
+.cvg_1 {
+    width: 100%;
+}
+
+.cvg_2 {
+    width: 100%;
+}
+
+.cvg_3 {
+    width: 50%;
+}
+
+.cvg_4 {
+    width: 70%;
+}

@@ -1,0 +1,217 @@
+.contact{
+    width: 100%;
+    
+    
+    &_top{
+        padding: 30px;
+        
+        @include media(600){
+            padding:10px 30px;
+        }
+    }
+    &_ul_title{
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 30px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        color:#242D49;
+        margin-bottom: 20px;
+        width: 450px;
+        margin-top: 20px;
+        @include media(820){
+            font-size: 22px;
+            width: 100%;
+            text-align: center;
+        }
+        @include media(600){
+            font-size: 22px;
+            width: 300px;
+            text-align: center;
+        }
+    }
+    &_decolor{
+        color:orange;
+    }
+    
+    &_list{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 210px;
+        margin-bottom: 35px;
+        
+        @include media(1500){
+            height: 280px;
+        }
+        @include media(1100){
+            height: 350px;
+        }
+        @include media(820){
+            height: auto;
+            align-items:center;
+        }
+        @include media(600){
+            height: auto;
+            align-items:center;
+        }
+    }
+    &_item{
+        padding:10px;
+        
+        @include media(820){
+            width: 100%;
+        }
+    }
+    &_section_pages{
+        padding:10px 15px;
+        border:2px solid orange;
+        width: 330px;
+        display: flex;
+        align-items:center;
+        justify-content: flex-start;
+        border-radius: 5px;
+        position: relative;
+        
+        @include media(820){
+            width: 100%;
+        }
+        @include media(600){
+            width: 100%;
+        }
+    }
+    &_pg_icon{
+        font-size: 24px;
+        color:orange;
+    }
+    &_pg_title{
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 20px;
+        color:#242D49;
+        text-transform: capitalize;
+        margin-left: 15px;
+        letter-spacing: 2px;
+        
+        @include media(820){
+            font-size: 24px;
+        }
+        @include media(600){
+            font-size: 20px;
+        }
+    }
+    &_abs_icon{
+        position: absolute;
+        right: 10px;
+        font-size: 23px;
+        color:orange;
+        
+    }
+    &_form{
+        height: 220px;
+        width: 800px;
+        border: 2px solid orange; 
+        padding: 10px 30px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 80px;
+        border-radius:5px;
+        @include media(1000){
+            width: 100%;
+        }
+        @include media(980){
+            height: auto;
+        }
+        @include media(820){
+            width: 100%;
+            height: auto;
+        }
+        @include media(600){
+            width: 100%;
+            height: auto;
+        }
+    }
+    &_name_bg{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: flex-start;
+        padding: 10px 0;
+        @include media(820){
+            width: 100%;
+        }
+        @include media(600){
+            width: 100%;
+        }
+    }
+    &_label{
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 16px;
+        color:#242D49;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        
+        @include media(600){
+            font-size: 14px;
+        }
+    }
+    &_send_btn{
+        background: orange;
+        border:none;
+        padding: 5px 15px;
+        font-family: $mont;
+        font-weight: 500;
+        color:white;
+        font-size: 18px;
+        text-transform:capitalize;
+        letter-spacing: 2px;
+        border-radius:5px;
+        margin-top: 15px;
+        position: absolute;
+        bottom: 0;
+        right: -2px;
+        left: -2px;
+        margin: 0 auto;
+        transform: translate(0px, 45px);
+        width: 100%;
+    }
+    &_input{
+        padding: 15px 10px;
+        border:1px solid orange;
+        border-radius:5px;
+        width: 350px;
+        font-family: $monta;
+        font-weight: 400;
+        font-size: 16px;
+        color:#242D49;
+        
+        @include media(820){
+            width: 100%;
+        }
+        @include media(600){
+            width: 100%;
+        }
+    }
+    &_message{
+        height: 145px;
+        
+    }
+}
+textarea{
+    resize: none;
+}
+.list_22{
+    height: 140px;
+    
+    @include media(820){
+        height: auto;
+    }
+}

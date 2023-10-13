@@ -1,0 +1,138 @@
+$nb: orange;
+$nq: #242D49;
+
+
+.comment{
+    width: 100% ;
+
+    &_top{
+        padding: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        @include media(820){
+            padding: 10px;
+        }
+    }
+    &_title_gpa{
+        display: flex;
+        align-items: center;justify-content: space-between;
+
+    }
+    &_title{
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 30px;
+        text-transform: capitalize;
+        color:#242D49;
+        letter-spacing: 2px;
+
+        & span{
+            color:orange;
+        }
+    }
+    &_gruppa{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+
+
+    &_button{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        padding: 3px 20px;
+        border: 2px solid orange;
+        background: rgba(0,0,0,0);
+        width: 70px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    &_view_1{
+        display:none;
+        font-size: 25px;
+        color: orange;
+
+        &.active{
+            display: block;
+        }
+    }
+    &_view_2{
+        display: block;
+        font-size: 25px;
+        color: orange;
+
+        &.active{
+            display: none;
+        }
+    }
+    &_comentariya{
+        width: 1100px;
+        border:3px solid orange;
+        border-radius:20px;
+        box-shadow: 0 4px 8px 3px rgb(0 0 0 / 15%), 0 1px 3px rgb(0 0 0 / 30%);
+        padding:25px;
+        margin-bottom:30px;
+        transition: 0.4s;
+        
+        @include media(820){
+            width: 100%;
+        }
+    }
+    &_title_bg{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &_bga{
+        color:$nq;
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 22px;
+        letter-spacing:2px;
+        text-transform: capitalize;
+        margin-left: 5%;
+    }
+    &_time{
+        color:#999;
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing:2px;
+        text-transform: capitalize;
+    }
+    &_text_bg{
+        color:$nb;
+        font-family: $mont;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing:2px;
+        text-transform: capitalize;
+        transition:0.4s;
+    }
+    &_btn_gpa{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &_button_jg{
+        font-size: 20px;
+        color:white;
+        padding: 5px 25px;
+        border:none;
+        background:$nb;
+        border-radius:5px;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    &_layk{
+        margin-right: 15px;
+    }
+}
