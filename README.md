@@ -1,3 +1,4 @@
+<img src="https://github.com/islamovsabit/portfolio-one-version/assets/147802380/1d17da0d-eff4-4c52-84b5-4722d5bce28f"/>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
